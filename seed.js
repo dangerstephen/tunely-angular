@@ -8,7 +8,8 @@ albumList.push({
               artistName: 'Nine Inch Nails',
               name: 'The Downward Spiral',
               releaseDate: '1994, March 8',
-              genres: [ 'industrial', 'industrial metal' ]
+              genres: [ 'industrial', 'industrial metal' ],
+              image: "http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg"
             });
 albumList.push({
               artistName: 'Metallica',
