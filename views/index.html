@@ -102,12 +102,17 @@
                     <li class="list-group-item">
                       <h4 class="inline-header">Album Name:</h4>
                       <span>{{album.name}}</span>
+                      <input ng-show="editing" ng-model="album.name" type="text" class="form-control input-md">
                     </li>
 
                     <li class="list-group-item">
                       <h4 class="inline-header">Artist Name:</h4>
                       <span>{{album.artistName}}</span>
+                      <input ng-show="editing" ng-model="album.artistName" type="text" class="form-control input-md">
                     </li>
+                    <button class='btn btn-info' ng-hide="editing" ng-click="editing = true">Edit Album</button>
+                    <button class='btn btn-success' ng-show="editing" ng-click="albumsIndexCtrl.editAlbum(album); editing = false">Save Changes</button>
+                    <button class='btn btn-danger' ng-click="albumsIndexCtrl.deleteAlbum(album)">Delete Album</button>
                   </ul>
                 </div>
               </div>
