@@ -85,7 +85,7 @@
       <p>{{albumsIndexCtrl.newAlbum}}</p>
 
       <input type="text" class="form-control" ng-model="searchText" placeholder="Search Albums">
-      <div ng-repeat="album in albumsIndexCtrl.albums | orderBy: 'name' | filter: searchText" class="row">
+      <div ng-repeat="album in albumsIndexCtrl.albums | orderBy: 'null' | filter: searchText" class="row">
 
         <div class="col-md-10 col-md-offset-1">
           <div class="panel panel-default">
